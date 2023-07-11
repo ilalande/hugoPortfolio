@@ -1,0 +1,100 @@
+body {
+  font-family: "Manjari", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  font-family: var(--ubuntu);
+  line-height: 1.5;
+}
+
+/* -----------RESET STYLES --------------*/
+/* Reset styles from https://www.joshwcomeau.com/css/custom-css-reset/ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+}
+
+* {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Manjari", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  font-family: var(--ubuntu);
+  line-height: 1.5;
+}
+
+/* -----------RESET STYLES --------------*/
+/* Reset styles from https://www.joshwcomeau.com/css/custom-css-reset/ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+}
+
+* {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: hsl(0, 0%, 23%);
+  color: hsl(0, 0%, 97%);
+  height: 100%;
+}
+
+/* Common */
+/* End Common */
+
+/*# sourceMappingURL=bundle.css.map */
