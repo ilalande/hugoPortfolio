@@ -43,6 +43,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   font-family: "Manjari", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -88,13 +92,246 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   background-color: hsl(0, 0%, 23%);
   color: hsl(0, 0%, 97%);
   height: 100%;
 }
 
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: 3px solid red;
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 1366px;
+  width: 80%;
+}
+
+a {
+  color: hsl(0, 0%, 97%);
+}
+
+a:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 97%);
+}
+
+p a {
+  text-decoration: underline;
+}
+
 /* Common */
+body {
+  font-family: "Manjari", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  font-family: var(--ubuntu);
+  line-height: 1.5;
+}
+
+/* -----------RESET STYLES --------------*/
+/* Reset styles from https://www.joshwcomeau.com/css/custom-css-reset/ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+}
+
+* {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  min-height: 10%;
+  width: 100%;
+  display: flex;
+}
+
+.header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header ul {
+  width: fit-content;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.header li {
+  min-width: 90px;
+}
+
+.homeItem {
+  font-size: 1.3rem;
+}
+
+.menuItem {
+  font-size: 1rem;
+}
+
+.header a {
+  padding: 1rem;
+}
+
+.header a:hover {
+  background-color: hsla(0, 0%, 97%, 0.2);
+  border-radius: 2px;
+  clip-path: polygon(1% 11%, 100% 0, 100% 100%, 0 94%);
+}
+
+@media only screen and (min-width:1366px ) {
+  .header ul,
+  .header li {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media only screen and (min-width:576px ) {
+  .homeItem {
+    font-size: 1.6rem;
+  }
+  .menuItem {
+    font-size: 1.3rem;
+  }
+  .header ul {
+    gap: 2rem;
+  }
+}
+body {
+  font-family: "Manjari", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  font-family: var(--ubuntu);
+  line-height: 1.5;
+}
+
+/* -----------RESET STYLES --------------*/
+/* Reset styles from https://www.joshwcomeau.com/css/custom-css-reset/ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+}
+
+* {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: hsla(223, 78%, 27%, 0.8);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  min-height: 8%;
+  clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
+}
+
+.footer ul {
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  padding: 2rem 0 1rem 0;
+}
+
+.footer li {
+  margin: 0 auto;
+  width: fit-content;
+  font-size: 0.8rem;
+}
+
+.footer li a {
+  padding-bottom: 0.5rem;
+}
+
+.footer li a:hover {
+  cursor: pointer;
+  color: hsl(0, 0%, 97%);
+  border-bottom: 2px solid hsl(0, 0%, 97%);
+}
+
+@media only screen and (min-width:576px ) {
+  .footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0;
+  }
+  .footer li {
+    font-size: 1rem;
+  }
+}
 /* End Common */
 
 /*# sourceMappingURL=bundle.css.map */

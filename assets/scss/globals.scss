@@ -5,3 +5,26 @@ body {
   color: $main-color-white;
   height: 100%;
 }
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: 3px solid red;
+}
+.section {
+  @include generalLayout;
+  width: 80%;
+}
+
+a {
+  color: $main-color-white;
+}
+a:hover {
+  cursor: pointer;
+  color: $main-color-white;
+}
+
+p a {
+  text-decoration: underline;
+}

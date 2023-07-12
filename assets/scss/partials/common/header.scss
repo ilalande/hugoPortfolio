@@ -1,0 +1,60 @@
+@import '../../utilities/utilities.scss';
+.header {
+  min-height: 10%;
+  width: 100%;
+  display: flex;
+}
+.header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header ul {
+  width: fit-content;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.header li {
+  min-width: 90px;
+}
+
+.homeItem {
+  font-size: 1.3rem;
+}
+.menuItem {
+  font-size: 1rem;
+}
+
+.header a {
+  padding: 1rem;
+}
+.header a:hover {
+  background-color: $main-color-white__transparent20;
+  border-radius: $border-radius;
+  clip-path: polygon(1% 11%, 100% 0, 100% 100%, 0 94%);
+}
+
+@media #{$laptop-up} {
+  .header ul,
+  .header li {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media #{$medium-up} {
+  .homeItem {
+    font-size: 1.6rem;
+  }
+  .menuItem {
+    font-size: 1.3rem;
+  }
+  .header ul {
+    gap: 2rem;
+  }
+}

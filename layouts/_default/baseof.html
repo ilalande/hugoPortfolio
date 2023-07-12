@@ -2,8 +2,11 @@
 <html>
   {{ partial "common/head.html" . }}
   <body>
-    {{ partial "common/header.html" . }} {{ block "main" . }}{{ end }} {{
-    partial "common/footer.html" . }} {{ partial "common/scripts.html" . }} {{
-    block "scripts" . }}{{ end }}
+    <div class="mainWrapper">
+      {{ partial "common/header.html" . }}
+      <main>{{ block "main" . }}{{ end }}</main>
+      {{ partial "common/footer.html" . }} {{ partial "common/scripts.html" . }}
+      {{ block "scripts" . }}{{ end }}
+    </div>
   </body>
 </html>
