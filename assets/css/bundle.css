@@ -107,7 +107,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  border: 3px solid red;
 }
 
 .section {
@@ -333,5 +332,186 @@ ul {
   }
 }
 /* End Common */
+/* Static pages */
+body {
+  font-family: "Manjari", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  font-family: var(--ubuntu);
+  line-height: 1.5;
+}
+
+/* -----------RESET STYLES --------------*/
+/* Reset styles from https://www.joshwcomeau.com/css/custom-css-reset/ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+}
+
+* {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.pageBgImage {
+  background-image: url("/images/background_1920_1080.jpg");
+  position: absolute;
+  isolation: isolate;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: -1;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+.pageLayout .articleWrapper {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.articleDecoration {
+  background-color: hsla(0, 0%, 97%, 0.2);
+  border: 1px solid hsla(0, 0%, 97%, 0.2);
+  margin: 1rem 0;
+}
+
+.pageLayout article {
+  background-color: hsl(0, 0%, 97%);
+  color: hsl(0, 0%, 23%);
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.pageLayout h2 {
+  font-weight: 700;
+}
+
+@media only screen and (min-width:576px ) {
+  .pageLayout .articleWrapper {
+    width: 60%;
+  }
+}
+/* End pages*/
+/* Home page */
+body {
+  font-family: "Manjari", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  font-family: var(--ubuntu);
+  line-height: 1.5;
+}
+
+/* -----------RESET STYLES --------------*/
+/* Reset styles from https://www.joshwcomeau.com/css/custom-css-reset/ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+}
+
+* {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.homeBgImage {
+  background-image: url("/images/background_1920_1080.jpg");
+  position: absolute;
+  isolation: isolate;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: -1;
+}
+
+.homeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.intro {
+  padding: 3rem;
+  background-color: hsla(0, 0%, 23%, 0.9);
+}
+
+.intro h1 {
+  font-size: 3.5rem;
+}
+
+.intro h2 {
+  font-size: 2.2rem;
+}
+
+@media only screen and (min-width:1366px ) {
+  .homeContainer {
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+  }
+  .intro {
+    padding: 3rem;
+    background-color: transparent;
+  }
+}
+/* End pages*/
 
 /*# sourceMappingURL=bundle.css.map */

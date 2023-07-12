@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<div class="pageBgImage"></div>
+<main class="section">
+  <div class="page_layout">
+    {{ with .Content }}
+    <div class="titleWrapper">
+      {{/*
+      <h1>{{ Page .Title }}</h1>
+    </div>
+    <div class="articleWrapper">
+      <div class="articleDecoration">
+        <article>{{ .Content }}</article>
+        */}}
+      </div>
+    </div>
+    {{end}}
+  </div>
+</main>
+
+{{ end }}

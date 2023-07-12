@@ -1,0 +1,32 @@
+@import 'utilities/utilities.scss';
+.homeBgImage {
+  @include backgroundImage;
+}
+.homeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+}
+.intro {
+  padding: 3rem;
+  background-color: $main-color-black__transparent-90;
+}
+.intro h1 {
+  font-size: 3.5rem;
+}
+.intro h2 {
+  font-size: 2.2rem;
+}
+
+@media #{$laptop-up} {
+  .homeContainer {
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+  }
+  .intro {
+    padding: 3rem;
+    background-color: transparent;
+  }
+}

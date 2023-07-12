@@ -1,0 +1,31 @@
+@import '../../utilities/utilities.scss';
+.pageBgImage {
+  @include backgroundImage;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+.pageLayout .articleWrapper {
+  width: 80%;
+  margin: 1rem auto;
+}
+.articleDecoration {
+  background-color: $main-color-white__transparent20;
+  border: 1px solid $main-color-white__transparent20;
+  margin: 1rem 0;
+}
+.pageLayout article {
+  background-color: $main-color-white;
+  color: $main-color-black;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.pageLayout h2 {
+  font-weight: 700;
+}
+
+@media #{$medium-up} {
+  .pageLayout .articleWrapper {
+    width: 60%;
+  }
+}

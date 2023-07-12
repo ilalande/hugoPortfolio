@@ -3,10 +3,9 @@
   {{ partial "common/head.html" . }}
   <body>
     <div class="mainWrapper">
-      {{ partial "common/header.html" . }}
-      <main>{{ block "main" . }}{{ end }}</main>
-      {{ partial "common/footer.html" . }} {{ partial "common/scripts.html" . }}
-      {{ block "scripts" . }}{{ end }}
+      {{ partial "common/header.html" . }} {{ block "main" . }}{{ end }} {{
+      partial "common/footer.html" . }} {{ partial "common/scripts.html" . }} {{
+      block "scripts" . }}{{ end }}
     </div>
   </body>
 </html>
