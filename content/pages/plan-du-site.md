@@ -1,5 +1,5 @@
 ---
-title: 'Mentions légales'
+title: 'Plan du site'
 ---
 
-Home content
+Plan du site

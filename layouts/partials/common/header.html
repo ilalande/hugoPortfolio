@@ -1,14 +1,14 @@
 <header role="banner" class="header section">
   <nav role="navigation" aria-label="navigation principale">
     <ul class="homeItem">
-      <li><a href="/">Juliane Casier</a></li>
+      {{ range .Site.Menus.home }}
+      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{end}}
     </ul>
     <ul class="menuItem">
-      <li><a href='{{ ref . "cv" }}'>CV</a></li>
-      {{/*
-      <li><a href='{{ ref . "projets" }}'>Projets</a></li>
-      <li><a href='{{ ref . "contact" }}'>Contact et Informations</a></li>
-      */}}
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{end}}
     </ul>
   </nav>
 </header>

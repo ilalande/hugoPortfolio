@@ -1,6 +1,0 @@
-baseURL = 'http://example.org/'
-languageCode = 'fr'
-title = 'Juliane Casier'
-[Params]
-  author= 'Juliane Casier'
-  description="Développeuse web React Node Next"

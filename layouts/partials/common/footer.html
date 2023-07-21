@@ -1,12 +1,8 @@
 <footer role="contentinfo" class="footer">
   <div class= 'section'>  
       <ul class="footerItems">
-      {{/*  <li><a href='{{ ref . "mentions-legales" }}'>Mentions légales</a></li>  */}}
-      <li>
-        <a href='{{ ref . "accessibilite" }}'>Accessibilité : partiellement conforme</a>
-      </li>
-      {{/*  <li><a href='{{ ref . "plan-du-site" }}'>Plan du site</a></li>
-      <li><a href='{{ ref . "contact" }}'>Contact et Informations</a></li>  */}}
-    </ul>
+        {{ range .Site.Menus.footer }}
+        <li><a href='{{ .URL }}'>{{.Name}}</a></li>  
+      <li>{{end}}  </ul> 
   </nav>
 </footer>

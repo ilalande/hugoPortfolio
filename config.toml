@@ -1,0 +1,41 @@
+baseURL = 'http://example.org/'
+languageCode = 'fr'
+title = 'Juliane Casier'
+[Params]
+  author= 'Juliane Casier'
+  description="Développeuse web React Node Next"
+
+  [menu]
+
+[[menu.home]]
+  name = 'Juliane Casier'
+  url = '/'
+  weight = 10
+
+
+[[menu.main]]
+  name = 'CV'
+  url = '/cv'
+  weight = 10
+[[menu.main]]
+  name = 'Projets'
+  url = '/pages/projets'
+  weight = 20
+[[menu.main]]
+  name = 'Contact et informations'
+  url = '/pages/contact'
+  weight = 30
+
+  
+[[menu.footer]]
+  name = 'Mentions légales'
+  url = '/pages/mentions-legales'
+  weight = 10
+[[menu.footer]]
+  name = 'Accessibilité : conforme'
+  url = '/pages/accessibilite'
+  weight = 20
+[[menu.footer]]
+  name = 'Contact et informations'
+  url = '/pages/contact'
+  weight = 30
