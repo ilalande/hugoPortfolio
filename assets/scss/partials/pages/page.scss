@@ -6,6 +6,7 @@
   margin-right: -6rem;
   h1 {
     text-transform: uppercase;
+    color: $main-color-white;
     border-radius: $border-radius;
     width: fit-content;
     padding: 1.5rem 10rem 1.5rem 3rem;
@@ -25,6 +26,7 @@
 .articleWrapper {
   width: 100%;
   margin: 1rem auto;
+  color: $main-color-black;
 }
 .articleDecoration {
   background-color: $main-color-white__transparent20;
@@ -33,7 +35,7 @@
 }
 article {
   background-color: $main-color-white;
-  color: $main-color-black;
+
   margin: 2rem;
   padding: 2rem;
 }
@@ -58,6 +60,11 @@ article {
   blockquote {
     font-family: inherit;
     padding: 0.5rem 0.8rem;
+    color: $main-color-black;
+  }
+  a {
+    text-decoration: underline;
+    color: $main-color-black;
   }
 }
 @media #{$medium-up} {

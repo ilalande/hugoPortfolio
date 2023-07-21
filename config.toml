@@ -4,15 +4,16 @@ title = 'Juliane Casier'
 [Params]
   author= 'Juliane Casier'
   description="Développeuse web React Node Next"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
   [menu]
-
 [[menu.home]]
   name = 'Juliane Casier'
   url = '/'
   weight = 10
-
-
 [[menu.main]]
   name = 'CV'
   url = '/cv'
@@ -26,7 +27,6 @@ title = 'Juliane Casier'
   url = '/pages/contact'
   weight = 30
 
-  
 [[menu.footer]]
   name = 'Mentions légales'
   url = '/pages/mentions-legales'
@@ -39,3 +39,7 @@ title = 'Juliane Casier'
   name = 'Contact et informations'
   url = '/pages/contact'
   weight = 30
+  [[menu.footer]]
+  name = 'Plan du site'
+  url = '/pages/plan-du-site'
+  weight = 40

@@ -390,6 +390,7 @@ ul {
 }
 .titleWrapper h1 {
   text-transform: uppercase;
+  color: hsl(0, 0%, 97%);
   border-radius: 2px;
   width: fit-content;
   padding: 1.5rem 10rem 1.5rem 3rem;
@@ -414,6 +415,7 @@ ul {
 .articleWrapper {
   width: 100%;
   margin: 1rem auto;
+  color: hsl(0, 0%, 23%);
 }
 
 .articleDecoration {
@@ -424,7 +426,6 @@ ul {
 
 article {
   background-color: hsl(0, 0%, 97%);
-  color: hsl(0, 0%, 23%);
   margin: 2rem;
   padding: 2rem;
 }
@@ -447,6 +448,11 @@ article {
 .page_layout blockquote {
   font-family: inherit;
   padding: 0.5rem 0.8rem;
+  color: hsl(0, 0%, 23%);
+}
+.page_layout a {
+  text-decoration: underline;
+  color: hsl(0, 0%, 23%);
 }
 
 @media only screen and (min-width:576px ) {

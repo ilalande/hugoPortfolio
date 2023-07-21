@@ -22,7 +22,7 @@ Les outils suivants ont été utilisés lors de l’évaluation :
 - Colour Contrast Analyser ;
 - Inspecteur de code de Firefox;
 
-Toutes les pages du siteont fait l’objet de la vérification de conformité
+Toutes les pages du site ont fait l’objet de la vérification de conformité
 {{< /card >}}
 {{< card >}}
 
