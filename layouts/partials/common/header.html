@@ -1,13 +1,22 @@
+{{ $currentPage := . }}
 <header role="banner" class="header section">
   <nav role="navigation" aria-label="navigation principale">
     <ul class="homeItem">
-      {{ range .Site.Menus.home }}
+      {{ if not .IsHome }} {{ range .Site.Menus.home }}
       <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-      {{end}}
+      {{ end }} {{end}}
     </ul>
     <ul class="menuItem">
-      {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ range .Site.Menus.main }} 
+      <li >
+        <a
+          href="{{ .URL }}"  {{if ($currentPage.IsMenuCurrent "main" .)  }}
+          class="activeLinkHeader"
+       
+          {{ end }}>
+          {{ .Name }}</a
+        >
+      </li>
       {{end}}
     </ul>
   </nav>

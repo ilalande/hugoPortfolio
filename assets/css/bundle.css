@@ -116,6 +116,11 @@ body {
   width: 80%;
 }
 
+.errorPage {
+  color: hsl(0, 0%, 23%);
+  text-align: center;
+}
+
 a {
   color: hsl(0, 0%, 97%);
 }
@@ -221,6 +226,16 @@ ul {
   clip-path: polygon(1% 11%, 100% 0, 100% 100%, 0 94%);
 }
 
+.activeLinkHeader {
+  background-color: hsla(0, 0%, 97%, 0.2);
+  border-radius: 2px;
+  clip-path: polygon(1% 11%, 100% 0, 100% 100%, 0 94%);
+}
+
+.activeLinkFooter {
+  border-bottom: 2px solid hsl(0, 0%, 97%);
+}
+
 @media only screen and (min-width:1366px ) {
   .header ul,
   .header li {
@@ -294,27 +309,22 @@ ul {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  min-height: 8%;
   clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
 }
-
 .footer ul {
   width: fit-content;
   display: block;
   margin: 0 auto;
   padding: 2rem 0 1rem 0;
 }
-
 .footer li {
   margin: 0 auto;
   width: fit-content;
-  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
 }
-
 .footer li a {
   padding-bottom: 0.5rem;
 }
-
 .footer li a:hover {
   cursor: pointer;
   color: hsl(0, 0%, 97%);
