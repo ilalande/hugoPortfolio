@@ -15,7 +15,10 @@ body {
   @include generalLayout;
   width: 80%;
 }
-
+.errorPage {
+  color: $main-color-black;
+  text-align: center;
+}
 a {
   color: $main-color-white;
 }

@@ -1,5 +1,9 @@
 ---
-title: 'Mentions légales'
+title: 'Plan du site'
 ---
 
-Home content
+{{% card %}}
+
+<p>Plan du site : </p>
+{{% sitemap %}}
+{{% /card %}}
