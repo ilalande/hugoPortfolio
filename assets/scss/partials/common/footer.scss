@@ -1,20 +1,22 @@
 @import '../../utilities/utilities.scss';
 .footer {
-  background-color: $second-color-blue__transparent-80;
+  background-color: $second-color-blue;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
+
   clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
   ul {
     width: fit-content;
     display: block;
-    margin: 0 auto;
+    margin: 1rem auto 0.5rem auto;
     padding: 2rem 0 1rem 0;
   }
   li {
     margin: 0 auto;
     width: fit-content;
     padding-bottom: 0.5rem;
+    font-size: 1rem;
   }
 
   li a {
@@ -31,11 +33,12 @@
 @media #{$medium-up} {
   .footer ul {
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin: 0;
+    width: 100%;
+    gap: 1rem;
   }
-  .footer li {
-    font-size: 1rem;
+}
+@media #{$laptop-up} {
+  .footer ul {
+    gap: 2rem;
   }
 }

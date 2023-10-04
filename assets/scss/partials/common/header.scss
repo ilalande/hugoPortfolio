@@ -1,7 +1,6 @@
 @import '../../utilities/utilities.scss';
 .header {
   min-height: 10%;
-  width: 100%;
   display: flex;
 }
 .header nav {
@@ -23,8 +22,10 @@
 }
 
 .homeItem {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 900;
 }
+
 .menuItem {
   font-size: 1rem;
 }
@@ -58,10 +59,10 @@
 
 @media #{$medium-up} {
   .homeItem {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .menuItem {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .header ul {
     gap: 2rem;

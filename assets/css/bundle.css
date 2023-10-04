@@ -134,6 +134,11 @@ p a {
   text-decoration: underline;
 }
 
+@media only screen and (min-width:1366px ) {
+  .section {
+    width: 60%;
+  }
+}
 /* Common */
 body {
   font-family: "Manjari", sans-serif;
@@ -186,7 +191,6 @@ ul {
 
 .header {
   min-height: 10%;
-  width: 100%;
   display: flex;
 }
 
@@ -209,7 +213,8 @@ ul {
 }
 
 .homeItem {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 900;
 }
 
 .menuItem {
@@ -246,10 +251,10 @@ ul {
 }
 @media only screen and (min-width:576px ) {
   .homeItem {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
   .menuItem {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .header ul {
     gap: 2rem;
@@ -305,7 +310,7 @@ ul {
 }
 
 .footer {
-  background-color: hsla(223, 78%, 27%, 0.8);
+  background-color: hsl(223, 78%, 27%);
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
@@ -314,13 +319,14 @@ ul {
 .footer ul {
   width: fit-content;
   display: block;
-  margin: 0 auto;
+  margin: 1rem auto 0.5rem auto;
   padding: 2rem 0 1rem 0;
 }
 .footer li {
   margin: 0 auto;
   width: fit-content;
   padding-bottom: 0.5rem;
+  font-size: 1rem;
 }
 .footer li a {
   padding-bottom: 0.5rem;
@@ -334,12 +340,13 @@ ul {
 @media only screen and (min-width:576px ) {
   .footer ul {
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin: 0;
+    width: 100%;
+    gap: 1rem;
   }
-  .footer li {
-    font-size: 1rem;
+}
+@media only screen and (min-width:1366px ) {
+  .footer ul {
+    gap: 2rem;
   }
 }
 /* End Common */
@@ -399,6 +406,7 @@ ul {
   margin-right: -6rem;
 }
 .titleWrapper h1 {
+  font-size: 1.8rem;
   text-transform: uppercase;
   color: hsl(0, 0%, 97%);
   border-radius: 2px;
@@ -412,14 +420,14 @@ ul {
 }
 
 .pageBgImage {
-  background-image: url("/images/background_1920_1080.jpg");
+  background: url("/images/background_1920_1080.jpg") no-repeat center;
   position: absolute;
   isolation: isolate;
   width: 100%;
   height: 100%;
   inset: 0;
   z-index: -1;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
 }
 
 .articleWrapper {
@@ -427,11 +435,15 @@ ul {
   margin: 1rem auto;
   color: hsl(0, 0%, 23%);
 }
+.articleWrapper h2 {
+  font-size: 1.4rem;
+}
 
 .articleDecoration {
   background-color: hsla(0, 0%, 97%, 0.2);
   border: 1px solid hsla(0, 0%, 97%, 0.2);
   margin: 1rem 0;
+  border: 1px solid green;
 }
 
 article {
@@ -522,7 +534,7 @@ ul {
 }
 
 .homeBgImage {
-  background-image: url("/images/background_1920_1080.jpg");
+  background: url("/images/background_1920_1080.jpg") no-repeat center;
   position: absolute;
   isolation: isolate;
   width: 100%;
@@ -536,6 +548,8 @@ ul {
   align-items: center;
   justify-content: center;
   margin: 1rem auto;
+  border: 1px solid green;
+  text-align: end;
 }
 
 .intro {
@@ -544,11 +558,13 @@ ul {
 }
 
 .intro h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 .intro h2 {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 @media only screen and (min-width:1366px ) {
