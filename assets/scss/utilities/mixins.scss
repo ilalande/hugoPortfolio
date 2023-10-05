@@ -3,7 +3,8 @@
   max-width: $laptop;
 }
 @mixin backgroundImage {
-  background: url('/images/background_1920_1080.jpg') no-repeat center ;
+  background: url('/images/background_1920_1080.jpg') no-repeat;
+  background-size: cover;
   position: absolute;
   isolation: isolate;
   width: 100%;

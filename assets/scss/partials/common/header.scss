@@ -1,9 +1,25 @@
 @import '../../utilities/utilities.scss';
 .header {
-  min-height: 10%;
+  min-height: 13%;
   display: flex;
+  background: url('/images/background_1920_1080.jpg') no-repeat;
+background-size:1980px 1080px; 
+ isolation: isolate;
+  z-index: 10;
+  position:sticky;
+top:0;
 }
 .header nav {
+
+  z-index: 10;
+  background-color: transparent;
+
+padding-bottom:2rem
+
+}
+.flexWrapper{
+
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -49,6 +65,9 @@
 }
 
 @media #{$laptop-up} {
+  .header {
+    background-size: 100%;
+  }
   .header ul,
   .header li {
     margin: 0;

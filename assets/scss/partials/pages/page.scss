@@ -1,9 +1,21 @@
 @import '../../utilities/utilities.scss';
+.titleWrapperBgImage{
 
+background: url('/images/background_1920_1080.jpg') no-repeat;
+background-size: cover;
+
+position: absolute;
+  isolation: isolate;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: -1;
+}
 .titleWrapper {
   display: flex;
   justify-content: flex-end;
   margin-right: -6rem;
+
   h1 {
     font-size: 1.8rem;
     text-transform: uppercase;
@@ -19,10 +31,10 @@
   }
 }
 
-.pageBgImage {
-  @include backgroundImage;
-  clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
-}
+// .pageBgImage {
+//   @include backgroundImage;
+//   clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+// }
 
 .articleWrapper {
   width: 100%;
@@ -36,7 +48,7 @@
   background-color: $main-color-white__transparent20;
   border: 1px solid $main-color-white__transparent20;
   margin: 1rem 0;
-  border: 1px solid green;
+
 }
 article {
   background-color: $main-color-white;
@@ -77,3 +89,4 @@ article {
     width: 80%;
   }
 }
+

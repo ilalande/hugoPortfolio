@@ -1,23 +1,26 @@
 {{ $currentPage := . }}
-<header role="banner" class="header section">
-  <nav role="navigation" aria-label="navigation principale">
-    <ul class="homeItem">
-      {{ if not .IsHome }} {{ range .Site.Menus.home }}
-      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-      {{ end }} {{end}}
-    </ul>
-    <ul class="menuItem">
-      {{ range .Site.Menus.main }} 
-      <li >
-        <a
-          href="{{ .URL }}"  {{if ($currentPage.IsMenuCurrent "main" .)  }}
-          class="activeLinkHeader"
-       
-          {{ end }}>
-          {{ .Name }}</a
-        >
-      </li>
-      {{end}}
-    </ul>
+<header role="banner" class="header ">
+  <nav role="navigation" aria-label="navigation principale" class="section">
+    <div class="flexWrapper">
+      <ul class="homeItem">
+        {{ if not .IsHome }} {{ range .Site.Menus.home }}
+        <li>
+          <!-- <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#FFEE00" d="M43.5,27.8C30.3,47.9,-24.4,46.8,-38.6,26.2C-52.8,5.5,-26.4,-34.7,1,-34.1C28.3,-33.6,56.6,7.7,43.5,27.8Z" transform="translate(100 100)" />
+      </svg> -->
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }} {{end}}
+      </ul>
+      <ul class="menuItem">
+        {{ range .Site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}" {{if ($currentPage.IsMenuCurrent "main" .) }} class="activeLinkHeader" {{ end }}>
+            {{ .Name }}</a>
+        </li>
+        {{end}}
+      </ul>
+
+    </div>
   </nav>
 </header>
